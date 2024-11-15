@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Selected directory" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="" />
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task1/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task1/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task1/ParentChildTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/Child.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/Parent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/ParentChildTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2osyrg14f9E63pFpaSJfELK1NP2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,14 +50,127 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.MainTest.executor": "Run",
+    "JUnit.ParentChildTest.executor": "Run",
+    "JUnit.ParentChildTest.testChildConstructorWithParams.executor": "Run",
+    "JUnit.ParentChildTest.testChildConstructorWithoutParams.executor": "Run",
+    "JUnit.ParentTest.TestDefConstructor.executor": "Run",
+    "JUnit.ParentTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/JavaProj/CardsTask",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.xast.sbertasks" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task1.Main" />
+      <module name="JavaSberSchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xast.sbertasks.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParentChildTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSberSchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xast.sbertasks.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.xast.sbertasks.task1" />
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task1.ParentChildTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParentChildTest.testChildConstructorWithParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSberSchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xast.sbertasks.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.xast.sbertasks.task1" />
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task1.ParentChildTest" />
+      <option name="METHOD_NAME" value="testChildConstructorWithParams" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParentChildTest.testChildConstructorWithoutParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSberSchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xast.sbertasks.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.xast.sbertasks.task1" />
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task1.ParentChildTest" />
+      <option name="METHOD_NAME" value="testChildConstructorWithoutParams" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSberSchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xast.sbertasks.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.xast.sbertasks" />
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.ParentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ParentChildTest" />
+        <item itemvalue="JUnit.ParentChildTest.testChildConstructorWithoutParams" />
+        <item itemvalue="JUnit.ParentChildTest.testChildConstructorWithParams" />
+        <item itemvalue="JUnit.ParentTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -48,7 +187,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731672780957</updated>
-      <workItem from="1731672782437" duration="6000" />
+      <workItem from="1731672782437" duration="7509000" />
+      <workItem from="1731686608703" duration="5135000" />
     </task>
     <servers />
   </component>
