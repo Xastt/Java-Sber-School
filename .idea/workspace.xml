@@ -7,11 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Change README.md">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task2/FirstTask/ArrayWithWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task2/SecondTask/MainPhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task2/SecondTask/PhoneNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task2/PhoneNumberTest.java" afterDir="false" />
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Change documentation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task2/LinkedVsArray/LinkedVsArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ArrayWithWords.executor": "Run",
+    "Application.LinkedVsArray.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MainPhone.executor": "Run",
     "JUnit.MainTest.executor": "Run",
@@ -50,6 +48,7 @@
     "JUnit.ParentChildTest.testChildConstructorWithoutParams.executor": "Run",
     "JUnit.ParentTest.TestDefConstructor.executor": "Run",
     "JUnit.ParentTest.executor": "Run",
+    "JUnit.PhoneNumberTest.executor": "Run",
     "JUnit.PhoneNumberTest.testGetExistingSurname.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -82,7 +81,7 @@
       <recent name="ru.xast.sbertasks" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PhoneNumberTest">
+  <component name="RunManager" selected="Application.LinkedVsArray">
     <configuration name="ArrayWithWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task2.FirstTask.ArrayWithWords" />
       <module name="JavaSberSchool" />
@@ -96,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task1.Main" />
+    <configuration name="LinkedVsArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task2.LinkedVsArray.LinkedVsArray" />
       <module name="JavaSberSchool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task1.*" />
+          <option name="PATTERN" value="ru.xast.sbertasks.task2.LinkedVsArray.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinkedVsArray" />
         <item itemvalue="JUnit.PhoneNumberTest" />
         <item itemvalue="JUnit.PhoneNumberTest.testGetExistingSurname" />
         <item itemvalue="Application.MainPhone" />
         <item itemvalue="Application.ArrayWithWords" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +183,7 @@
       <workItem from="1731738534099" duration="1199000" />
       <workItem from="1731932069725" duration="582000" />
       <workItem from="1731942299442" duration="890000" />
-      <workItem from="1732016797294" duration="6831000" />
+      <workItem from="1732016797294" duration="8615000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -202,7 +201,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731692943485</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add new homework - task2. New classes: MainPhone, PhoneNumber and test class: PhoneNumberTest">
+      <option name="closed" value="true" />
+      <created>1732024017890</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732024017890</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Change documentation">
+      <option name="closed" value="true" />
+      <created>1732024043929</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732024043929</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +226,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add README.md, change file structure" />
     <MESSAGE value="Change README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change README.md" />
+    <MESSAGE value="Add new homework - task2. New classes: MainPhone, PhoneNumber and test class: PhoneNumberTest" />
+    <MESSAGE value="Change documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change documentation" />
   </component>
 </project>
