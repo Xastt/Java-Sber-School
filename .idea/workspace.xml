@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Change documentation">
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Доп.задание LinkedList VS ArrayList">
       <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task2/LinkedVsArray/LinkedVsArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -183,7 +183,7 @@
       <workItem from="1731738534099" duration="1199000" />
       <workItem from="1731932069725" duration="582000" />
       <workItem from="1731942299442" duration="890000" />
-      <workItem from="1732016797294" duration="8615000" />
+      <workItem from="1732016797294" duration="8979000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -217,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732024043929</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Доп.задание LinkedList VS ArrayList">
+      <option name="closed" value="true" />
+      <created>1732025855250</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732025855250</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +236,7 @@
     <MESSAGE value="Change README.md" />
     <MESSAGE value="Add new homework - task2. New classes: MainPhone, PhoneNumber and test class: PhoneNumberTest" />
     <MESSAGE value="Change documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change documentation" />
+    <MESSAGE value="Доп.задание LinkedList VS ArrayList" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доп.задание LinkedList VS ArrayList" />
   </component>
 </project>
