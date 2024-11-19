@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="8" />
     <option name="CUSTOM_SCOPE_NAME" value="Selected directory" />
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task1/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task1/Parent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task1/ParentChildTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Change README.md">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task2/FirstTask/ArrayWithWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task2/SecondTask/MainPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task2/SecondTask/PhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task2/PhoneNumberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/Child.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/Parent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/ParentChildTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +41,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ArrayWithWords.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.MainPhone.executor": "Run",
     "JUnit.MainTest.executor": "Run",
     "JUnit.ParentChildTest.executor": "Run",
     "JUnit.ParentChildTest.testChildConstructorWithParams.executor": "Run",
     "JUnit.ParentChildTest.testChildConstructorWithoutParams.executor": "Run",
     "JUnit.ParentTest.TestDefConstructor.executor": "Run",
     "JUnit.ParentTest.executor": "Run",
+    "JUnit.PhoneNumberTest.testGetExistingSurname.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -64,7 +58,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProj/CardsTask",
+    "last_opened_file_path": "D:/JavaProj/SBER-SCHOOL/JavaSberSchool",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,11 +75,27 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.xast.sbertasks.task1" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.xast.sbertasks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.PhoneNumberTest">
+    <configuration name="ArrayWithWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task2.FirstTask.ArrayWithWords" />
+      <module name="JavaSberSchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xast.sbertasks.task2.FirstTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task1.Main" />
       <module name="JavaSberSchool" />
@@ -99,75 +109,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParentChildTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPhone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task2.SecondTask.MainPhone" />
       <module name="JavaSberSchool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task1.*" />
+          <option name="PATTERN" value="ru.xast.sbertasks.task2.SecondTask.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.xast.sbertasks.task1" />
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task1.ParentChildTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhoneNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSberSchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xast.sbertasks.task2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.xast.sbertasks.task2" />
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task2.PhoneNumberTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParentChildTest.testChildConstructorWithParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PhoneNumberTest.testGetExistingSurname" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSberSchool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task1.*" />
+          <option name="PATTERN" value="ru.xast.sbertasks.task2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.xast.sbertasks.task1" />
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task1.ParentChildTest" />
-      <option name="METHOD_NAME" value="testChildConstructorWithParams" />
+      <option name="PACKAGE_NAME" value="ru.xast.sbertasks.task2" />
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task2.PhoneNumberTest" />
+      <option name="METHOD_NAME" value="testGetExistingSurname" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParentChildTest.testChildConstructorWithoutParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSberSchool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.xast.sbertasks.task1" />
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task1.ParentChildTest" />
-      <option name="METHOD_NAME" value="testChildConstructorWithoutParams" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSberSchool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.xast.sbertasks" />
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.ParentTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhoneNumberTest" />
+        <item itemvalue="JUnit.PhoneNumberTest.testGetExistingSurname" />
+        <item itemvalue="Application.MainPhone" />
+        <item itemvalue="Application.ArrayWithWords" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ParentChildTest" />
-        <item itemvalue="JUnit.ParentChildTest.testChildConstructorWithoutParams" />
-        <item itemvalue="JUnit.ParentChildTest.testChildConstructorWithParams" />
-        <item itemvalue="JUnit.ParentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -188,11 +180,37 @@
       <option name="presentableId" value="Default" />
       <updated>1731672780957</updated>
       <workItem from="1731672782437" duration="7509000" />
-      <workItem from="1731686608703" duration="5135000" />
+      <workItem from="1731686608703" duration="7404000" />
+      <workItem from="1731738534099" duration="1199000" />
+      <workItem from="1731932069725" duration="582000" />
+      <workItem from="1731942299442" duration="890000" />
+      <workItem from="1732016797294" duration="6831000" />
     </task>
+    <task id="LOCAL-00001" summary="Add README.md, change file structure">
+      <option name="closed" value="true" />
+      <created>1731692888142</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731692888142</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Change README.md">
+      <option name="closed" value="true" />
+      <created>1731692943485</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731692943485</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add README.md, change file structure" />
+    <MESSAGE value="Change README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change README.md" />
   </component>
 </project>
