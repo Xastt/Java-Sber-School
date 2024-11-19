@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 /**
- * Class for test the program
+ * Class for test
  * @author Artyom Khasrovyan
  * @see Parent
  * @see Child
