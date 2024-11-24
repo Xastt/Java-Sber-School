@@ -6,6 +6,8 @@ import java.util.Map;
 /**
  * class for checking CountMapImpl working
  * @author Khasrovyan Artyom
+ * @see CountMap
+ * @see CountMapImpl
  */
 public class Main {
     public static void main(String[] args) {

@@ -5,6 +5,8 @@ import java.util.Map;
 /**
  * parameterized interface for working with Map
  * @author Khasrovyan Artyom
+ * @see CountMapImpl
+ * @see Main
  */
 public interface CountMap<T> {
 

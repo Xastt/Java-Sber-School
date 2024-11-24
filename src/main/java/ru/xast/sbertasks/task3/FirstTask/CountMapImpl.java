@@ -7,6 +7,8 @@ import java.util.Map;
  * class which implements CountMap metods
  * @param <T>
  * @author Khasrovyan Artyom
+ * @see Main
+ * @see CountMap
  */
 public class CountMapImpl<T> implements CountMap<T> {
 

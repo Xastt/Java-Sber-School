@@ -4,12 +4,18 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.xast.sbertasks.task3.FirstTask.CountMap;
 import ru.xast.sbertasks.task3.FirstTask.CountMapImpl;
+import ru.xast.sbertasks.task3.SecondTask.CollectionUtils;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Class for test work CountMapImpl
+ * @author Artyom Khasrovyan
+ * @see CountMapImpl
+ */
 class CountMapImplTest {
 
     private CountMap<Integer> countMap;
