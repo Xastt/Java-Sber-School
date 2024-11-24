@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Доп.задание для сравнения работы LinkedList и ArrayList
- */
 public class LinkedVsArray {
     public static void main(String[] args) {
         List<Integer> linkedList = new LinkedList<>();
