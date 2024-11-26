@@ -77,8 +77,6 @@ public class CollectionUtils {
         }
     }
 
-    // Метод для проверки наличия всех элементов из одного списка в другом
-
     /**
      * method to check if all items from one list are present in another list
      * @param c1
