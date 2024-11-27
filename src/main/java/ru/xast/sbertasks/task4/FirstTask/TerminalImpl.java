@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 
 public class TerminalImpl implements Terminal {
+
     private final TerminalServer server;
     private final PinValidator pinValidator;
     private String enteredPin = "";
