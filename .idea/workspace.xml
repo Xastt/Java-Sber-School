@@ -8,11 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="try to solve problem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalConsoleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalConsoleApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalRun.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +45,7 @@
     "Application.LinkedVsArray.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MainPhone.executor": "Run",
-    "Application.TerminalConsoleApp.executor": "Debug",
+    "Application.TerminalConsoleApp.executor": "Run",
     "Application.UrlContentReader.executor": "Run",
     "Application.ru.xast.sbertasks.task3.SecondTask.Main.executor": "Run",
     "Application.ru.xast.sbertasks.task4.FirstTask.Main.executor": "Run",
@@ -205,7 +203,7 @@
       <workItem from="1732624825508" duration="12003000" />
       <workItem from="1732727328593" duration="1557000" />
       <workItem from="1732792435339" duration="2166000" />
-      <workItem from="1732798727813" duration="2311000" />
+      <workItem from="1732798727813" duration="2920000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -303,7 +301,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732727905936</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="try to solve problem">
+      <option name="closed" value="true" />
+      <created>1732801073099</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732801073099</updated>
+    </task>
+    <task id="LOCAL-00014" summary="try to solve problem">
+      <option name="closed" value="true" />
+      <created>1732801115881</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1732801115881</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

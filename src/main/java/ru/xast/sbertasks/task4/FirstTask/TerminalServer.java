@@ -20,8 +20,8 @@ public class TerminalServer {
      * Method for printing out the balance
      * @param pin
      */
-    public double checkBalance(String pin){
-        return balance;
+    public void checkBalance(String pin){
+        System.out.println("Balance: " + balance);
     }
 
     /**
@@ -54,6 +54,7 @@ public class TerminalServer {
             throw new InvalidAmountException("Invalid amount for withdraw. Amount must be divided by 100!");
         }else{
             balance -= amount;
+            System.out.println("Withdrawn: " + amount + "\nNew balance: " + balance);
         }
     }
 }

@@ -21,10 +21,10 @@ public class TerminalImpl implements Terminal {
     }
 
     @Override
-    public double checkBalance() throws AccountIsLockedException {
+    public void checkBalance() throws AccountIsLockedException {
         checkLocked();
         System.out.println("Balance: ");
-        return server.checkBalance(enteredPin);
+        server.checkBalance(enteredPin);
     }
 
     @Override

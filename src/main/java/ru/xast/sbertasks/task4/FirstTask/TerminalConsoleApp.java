@@ -23,7 +23,7 @@ public class TerminalConsoleApp {
             System.out.print("Please enter your choice: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Очистка буфера
+
 
             try {
                 switch (choice) {
@@ -64,32 +64,30 @@ public class TerminalConsoleApp {
 
     private void checkBalance() {
         try {
-            double balance = terminal.checkBalance();
-            System.out.println("Ваш баланс: " + balance);
+            terminal.checkBalance();
         } catch (AccountIsLockedException e) {
             System.out.println(e.getMessage());
         }
     }
 
     private void withdraw() {
-        System.out.print("Введите сумму для снятия: ");
+        System.out.print("Enter money for withdraw: ");
         int amount = scanner.nextInt();
-        scanner.nextLine(); // Очистка буфера
         try {
             terminal.withdraw(amount);
-            System.out.println("Сумма " + amount + " успешно снята.");
+            System.out.println("Sum " + amount + " deposited successfully.");
         } catch (InvalidAmountException | AccountIsLockedException | NotEnoughFundException e) {
             System.out.println(e.getMessage());
         }
     }
 
     private void deposit() {
-        System.out.print("Введите сумму для пополнения: ");
+        System.out.print("Enter money for deposit: ");
         int amount = scanner.nextInt();
         scanner.nextLine(); // Очистка буфера
         try {
             terminal.deposit(amount);
-            System.out.println("Сумма " + amount + " успешно пополнена.");
+            System.out.println("Sum " + amount + " deposited successfully.");
         } catch (AccountIsLockedException | InvalidAmountException e) {
             System.out.println(e.getMessage());
         }
