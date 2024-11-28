@@ -11,8 +11,9 @@ public class TerminalImpl implements Terminal {
     private final PinValidator pinValidator;
     private String enteredPin = "";
     private int failedAttempts = 0;
-    private boolean isLocked = false;
     private LocalDateTime lockTime;
+
+    StringBuilder pinCode = new StringBuilder();
 
     public TerminalImpl(TerminalServer server, PinValidator pinValidator) {
         this.server = server;
@@ -46,21 +47,39 @@ public class TerminalImpl implements Terminal {
 
     @Override
     public void enterPin(String pin) throws InvalidPinException, AccountIsLockedException {
+        int count = 0;
+
         checkLocked();
-        if(pin.length()!=4 && !pin.matches("[0-9]{4}")){
-            failedAttempts++;
-            if(failedAttempts>3){
-                lockTime = LocalDateTime.now();
-                throw new AccountIsLockedException("Account is locked. Try again in ", 10000);
+
+        System.out.println("Write your pin here, use 'enter' after each number");
+
+        try {
+            for (int i = 0; i <= count; i++) {
+                if (pin.matches("[0-9]")) {
+                    pinCode.append(pin);
+                    count += 1;
+                } else {
+                    throw new InvalidPinException("Pin must be a number");
+                }
             }
-            throw new InvalidPinException("Pin is not valid");
+        }catch (InvalidPinException e){
+            System.out.println(e.getMessage());
         }
-        if(pinValidator.validate(pin)){
-            enteredPin = pin;
-            failedAttempts = 0;
-        }else{
-            failedAttempts++;
-            throw new InvalidPinException("Pin is not valid");
+
+        try{
+            if(pinValidator.validate(String.valueOf(pinCode))){
+                enteredPin = pinCode.toString();
+                failedAttempts = 0;
+            }else{
+                failedAttempts++;
+                if(failedAttempts > 3){
+                    lockTime = LocalDateTime.now();
+                    throw new AccountIsLockedException("Account is locked.", 10000);
+
+                }
+            }
+        }catch (AccountIsLockedException e){
+            System.out.println(e.getMessage());
         }
     }
 

@@ -31,7 +31,7 @@ public class TerminalServer {
      * @throws InvalidAmountException
      */
     public void deposit(String pin, int amount) throws InvalidAmountException {
-        if (amount / 100 != 0){
+        if (amount % 100 != 0){
             throw new InvalidAmountException("Invalid amount for deposit. Amount must be divided by 100!");
         }else{
             balance += amount;
@@ -50,7 +50,7 @@ public class TerminalServer {
     public void withdraw(String pin, int amount) throws InvalidAmountException, NotEnoughFundException {
         if(amount > balance){
             throw new NotEnoughFundException("Not enough fund. Available balance: " + balance);
-        } else if (amount / 100 != 0) {
+        } else if (amount % 100 != 0) {
             throw new InvalidAmountException("Invalid amount for withdraw. Amount must be divided by 100!");
         }else{
             balance -= amount;
