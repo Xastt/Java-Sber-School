@@ -8,6 +8,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
+/**
+ * A class that parses site content using built-in libraries
+ * @author Khasrovyan Artyom
+ */
 public class UrlContentReader {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -34,6 +38,13 @@ public class UrlContentReader {
         scanner.close();
     }
 
+    /**
+     * Method performing the main functionality of the class
+     * input - url of the site, which you want to parse
+     * output - print in console all content of the site
+     * @param urlString
+     * @throws IOException
+     */
     public static void readContent(String urlString) throws IOException {
         URL url = new URL(urlString);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();

@@ -6,6 +6,14 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
+/**
+ * Class, which realized user access to the system. Use methods
+ * from TerminalServer and PinValidator
+ * @see TerminalServer
+ * @see PinValidator
+ * @see TerminalConsoleApp
+ * @author Khasrovyan Artyom
+ */
 public class TerminalImpl implements Terminal {
 
     private final TerminalServer server;

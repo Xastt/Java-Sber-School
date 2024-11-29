@@ -4,6 +4,13 @@ import ru.xast.sbertasks.task4.FirstTask.Excpts.*;
 
 import java.util.Scanner;
 
+/**
+ * Class, for interaction between user and terminal
+ * @see TerminalServer
+ * @see PinValidator
+ * @see TerminalImpl
+ * @author Khasrovyan Artyom
+ */
 public class TerminalConsoleApp {
     private final TerminalImpl terminal;
     private final Scanner scanner;
