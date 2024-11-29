@@ -7,10 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Change method checkBalance return -&gt; void">
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Fix method enterPin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/Excpts/AccountIsLockedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/Excpts/AccountIsLockedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/Terminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalConsoleApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalImpl.java" afterDir="false" />
     </list>
@@ -209,7 +207,7 @@
       <workItem from="1732863751330" duration="261000" />
       <workItem from="1732864700437" duration="1369000" />
       <workItem from="1732871874211" duration="647000" />
-      <workItem from="1732884290393" duration="1817000" />
+      <workItem from="1732884290393" duration="5763000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -331,7 +329,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732801733054</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Fix method enterPin">
+      <option name="closed" value="true" />
+      <created>1732886342119</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1732886342119</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,6 +355,7 @@
     <MESSAGE value="Added completed second task" />
     <MESSAGE value="try to solve problem" />
     <MESSAGE value="Change method checkBalance return -&gt; void" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change method checkBalance return -&gt; void" />
+    <MESSAGE value="Fix method enterPin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix method enterPin" />
   </component>
 </project>

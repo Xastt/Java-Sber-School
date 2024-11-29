@@ -13,6 +13,7 @@ public class TerminalImpl implements Terminal {
     private String enteredPin = "";
     private int failedAttempts = 0;
     private LocalDateTime lockTime;
+    private boolean access = false;
 
     StringBuilder pinCode = new StringBuilder();
 
@@ -66,6 +67,9 @@ public class TerminalImpl implements Terminal {
 
             if (pinCode.length() == 4) {
                 validatePin();
+                if(access){
+                    break;
+                }
             }
         }
     }
@@ -75,15 +79,15 @@ public class TerminalImpl implements Terminal {
             System.out.println("Access granted.");
             failedAttempts = 0;
             pinCode.setLength(0);
+            access = true;
         } else {
-
+            access = false;
             try{
                 failedAttempts++;
                 throw new InvalidPinException("Incorrect PIN");
             }catch (InvalidPinException e){
                 System.out.println(e.getMessage());
             }
-
             if (failedAttempts > 3) {
                 try{
                     lockTime = LocalDateTime.now().plusSeconds(10);
@@ -91,25 +95,30 @@ public class TerminalImpl implements Terminal {
                 }catch (AccountIsLockedException e){
                     System.out.println(e.getMessage());
                 }
-
             } else {
-                pinCode.setLength(0);
-                System.out.println("Try again.");
+                try {
+                    pinCode.setLength(0);
+                    throw new InvalidPinException("Incorrect PIN. Try again.");
+                }catch (InvalidPinException e){
+                    System.out.println(e.getMessage());
+                }
             }
         }
     }
 
     private void checkLocked() throws AccountIsLockedException {
-        if (lockTime != null && LocalDateTime.now().isBefore(lockTime)) {
-            long secondsUntilUnlock = Duration.between(LocalDateTime.now(), lockTime).getSeconds();
-            throw new AccountIsLockedException("Account is locked.", secondsUntilUnlock);
+        try{
+            if (lockTime != null && LocalDateTime.now().isBefore(lockTime)) {
+                long secondsUntilUnlock = Duration.between(LocalDateTime.now(), lockTime).getSeconds();
+                throw new AccountIsLockedException("Account is locked.", secondsUntilUnlock);
+            }
+        }catch (AccountIsLockedException e){
+            System.out.println(e.getMessage());
         }
+
     }
 
-    public static void main (String[] args) throws InvalidPinException, AccountIsLockedException {
-        TerminalServer terminalServer = new TerminalServer(2000);
-        PinValidator pinValidator1 = new PinValidator("1234");
-        TerminalImpl terminal = new TerminalImpl(terminalServer, pinValidator1);
-        terminal.enterPin();
+    public boolean getAccess() {
+        return access;
     }
 }
