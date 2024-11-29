@@ -4,6 +4,7 @@ import ru.xast.sbertasks.task4.FirstTask.Excpts.*;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.Scanner;
 
 public class TerminalImpl implements Terminal {
 
@@ -23,14 +24,13 @@ public class TerminalImpl implements Terminal {
     @Override
     public void checkBalance() throws AccountIsLockedException {
         checkLocked();
-        System.out.println("Balance: ");
         server.checkBalance(enteredPin);
     }
 
     @Override
     public void withdraw(int amount) throws InvalidAmountException, AccountIsLockedException, NotEnoughFundException {
         checkLocked();
-        if(amount % 100 != 0 || amount < 0){
+        if(amount % 100 != 0 || amount <= 0){
             throw new InvalidAmountException("Amount must be positive and divisible by 100");
         }
         server.withdraw(enteredPin, amount);
@@ -39,58 +39,77 @@ public class TerminalImpl implements Terminal {
     @Override
     public void deposit(int amount) throws AccountIsLockedException, InvalidAmountException {
         checkLocked();
-        if(amount % 100 != 0 || amount < 0){
+        if(amount % 100 != 0 || amount <= 0){
             throw new InvalidAmountException("Amount must be positive and divisible by 100");
         }
         server.deposit(enteredPin, amount);
     }
 
-    @Override
-    public void enterPin(String pin) throws InvalidPinException, AccountIsLockedException {
-        int count = 0;
 
+    public void enterPin() throws AccountIsLockedException, InvalidPinException {
         checkLocked();
+        Scanner scanner = new Scanner(System.in);
+        while (pinCode.length() < 4) {
+            System.out.print("Enter the next digit of the PIN code: ");
+            String input = scanner.nextLine();
 
-        System.out.println("Write your pin here, use 'enter' after each number");
-
-        try {
-            for (int i = 0; i <= count; i++) {
-                if (pin.matches("[0-9]")) {
-                    pinCode.append(pin);
-                    count += 1;
-                } else {
-                    throw new InvalidPinException("Pin must be a number");
+            try{
+                if (input.length() != 1 || !input.matches("[0-9]")) {
+                    throw new InvalidPinException("Please only enter positive digits.");
                 }
+            }catch (InvalidPinException e){
+                System.out.println(e.getMessage());
+                continue;
             }
-        }catch (InvalidPinException e){
-            System.out.println(e.getMessage());
+
+            pinCode.append(input);
+
+            if (pinCode.length() == 4) {
+                validatePin();
+            }
         }
+    }
 
-        try{
-            if(pinValidator.validate(String.valueOf(pinCode))){
-                enteredPin = pinCode.toString();
-                failedAttempts = 0;
-            }else{
+    private void validatePin() throws AccountIsLockedException, InvalidPinException {
+        if (pinValidator.validate(String.valueOf(pinCode))) {
+            System.out.println("Access granted.");
+            failedAttempts = 0;
+            pinCode.setLength(0);
+        } else {
+
+            try{
                 failedAttempts++;
-                if(failedAttempts > 3){
-                    lockTime = LocalDateTime.now();
-                    throw new AccountIsLockedException("Account is locked.", 10000);
-
-                }
+                throw new InvalidPinException("Incorrect PIN");
+            }catch (InvalidPinException e){
+                System.out.println(e.getMessage());
             }
-        }catch (AccountIsLockedException e){
-            System.out.println(e.getMessage());
+
+            if (failedAttempts > 3) {
+                try{
+                    lockTime = LocalDateTime.now().plusSeconds(10);
+                    throw new AccountIsLockedException("Account is locked.", 10);
+                }catch (AccountIsLockedException e){
+                    System.out.println(e.getMessage());
+                }
+
+            } else {
+                pinCode.setLength(0);
+                System.out.println("Try again.");
+            }
         }
     }
 
     private void checkLocked() throws AccountIsLockedException {
-        if(lockTime != null){
-            long secondsLocked = Duration.between(lockTime, LocalDateTime.now()).getSeconds();
-            if(secondsLocked < 10){
-                throw new AccountIsLockedException("Account is locked. Try again in ", secondsLocked);
-            }else{
-                lockTime = null;
-            }
+        if (lockTime != null && LocalDateTime.now().isBefore(lockTime)) {
+            long secondsUntilUnlock = Duration.between(LocalDateTime.now(), lockTime).getSeconds();
+            throw new AccountIsLockedException("Account is locked.", secondsUntilUnlock);
         }
+    }
+
+    public static void main (String[] args) throws InvalidPinException, AccountIsLockedException {
+        TerminalServer terminalServer = new TerminalServer(2000);
+        PinValidator pinValidator1 = new PinValidator("1234");
+        TerminalImpl terminal = new TerminalImpl(terminalServer, pinValidator1);
+        terminal.enterPin();
     }
 }

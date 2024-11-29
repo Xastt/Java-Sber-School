@@ -4,6 +4,8 @@ import ru.xast.sbertasks.task4.FirstTask.Excpts.*;
 
 import java.util.Scanner;
 
+//TODO если пользователь ввел пин в самом начале, ставим флаг true, по умолчанию false
+//TODO во всех методах проверяем флаг если true то даем доступ иначе кидаем в метод ввода пина
 public class TerminalConsoleApp {
     private final TerminalImpl terminal;
     private final Scanner scanner;
@@ -15,7 +17,7 @@ public class TerminalConsoleApp {
 
     public void start() {
         while (true) {
-            //System.out.println("1. Ввести PIN-код");
+            System.out.println("1.Enter PIN");
             System.out.println("2. Check Balance");
             System.out.println("3. Withdraw Money");
             System.out.println("4. Deposit money");
@@ -52,11 +54,8 @@ public class TerminalConsoleApp {
     }
 
     private void enterPin() {
-        System.out.print("Введите ваш PIN-код: ");
-        String pin = scanner.nextLine();
         try {
-            terminal.enterPin(pin);
-            System.out.println("PIN-код успешно введен.");
+            terminal.enterPin();
         } catch (InvalidPinException | AccountIsLockedException e) {
             System.out.println(e.getMessage());
         }
@@ -75,7 +74,6 @@ public class TerminalConsoleApp {
         int amount = scanner.nextInt();
         try {
             terminal.withdraw(amount);
-            System.out.println("Sum " + amount + " deposited successfully.");
         } catch (InvalidAmountException | AccountIsLockedException | NotEnoughFundException e) {
             System.out.println(e.getMessage());
         }
@@ -84,23 +82,18 @@ public class TerminalConsoleApp {
     private void deposit() {
         System.out.print("Enter money for deposit: ");
         int amount = scanner.nextInt();
-        scanner.nextLine(); // Очистка буфера
         try {
             terminal.deposit(amount);
-            System.out.println("Sum " + amount + " deposited successfully.");
         } catch (AccountIsLockedException | InvalidAmountException e) {
             System.out.println(e.getMessage());
         }
     }
 
     public static void main(String[] args) {
-
         TerminalServer server = new TerminalServer(2000);
         PinValidator pinValidator = new PinValidator("1234");
-
         TerminalImpl terminal = new TerminalImpl(server, pinValidator);
         TerminalConsoleApp app = new TerminalConsoleApp(terminal);
-
         app.start();
     }
 }

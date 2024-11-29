@@ -11,5 +11,5 @@ public interface Terminal {
     void checkBalance() throws AccountIsLockedException;
     void withdraw(int amount) throws InvalidAmountException, AccountIsLockedException, NotEnoughFundException;
     void deposit(int amount) throws AccountIsLockedException, InvalidAmountException;
-    void enterPin(String pin) throws InvalidPinException, AccountIsLockedException;
+    void enterPin() throws InvalidPinException, AccountIsLockedException;
 }

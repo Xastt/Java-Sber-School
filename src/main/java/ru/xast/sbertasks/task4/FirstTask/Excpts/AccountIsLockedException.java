@@ -23,6 +23,6 @@ public class AccountIsLockedException extends Exception{
      */
     @Override
     public String getMessage(){
-        return super.getMessage() + "\nRemaining time: " + (timeToOpen / 1000) + " seconds.";
+        return super.getMessage() + "\nRemaining time: " + timeToOpen + " seconds.";
     }
 }
