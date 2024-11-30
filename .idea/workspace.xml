@@ -7,16 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add documentation add answers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/CalculatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/CashProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/CheckConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/GetAllGetters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/GetAllMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/Metric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/PerfomanceProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/aswers.txt" afterDir="false" />
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="New 5 task">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/BeanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +93,7 @@
       <recent name="ru.xast.sbertasks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CheckConstants">
+  <component name="RunManager" selected="JUnit.CalculatorImplTest">
     <configuration name="CheckConstants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task5.CheckConstants" />
       <module name="JavaSberSchool" />
@@ -140,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TerminalConsoleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task4.FirstTask.TerminalConsoleApp" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task5.Main" />
       <module name="JavaSberSchool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task4.FirstTask.*" />
+          <option name="PATTERN" value="ru.xast.sbertasks.task5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,26 +146,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TerminalImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task4.FirstTask.TerminalImpl" />
+    <configuration name="CalculatorImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSberSchool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task4.FirstTask.*" />
+          <option name="PATTERN" value="ru.xast.sbertasks.task5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ru.xast.sbertasks.task5" />
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task5.CalculatorImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatorImplTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.CheckConstants" />
         <item itemvalue="Application.GetAllGetters" />
         <item itemvalue="Application.GetAllMethods" />
-        <item itemvalue="Application.TerminalConsoleApp" />
-        <item itemvalue="Application.TerminalImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +212,7 @@
       <workItem from="1732871874211" duration="647000" />
       <workItem from="1732884290393" duration="7330000" />
       <workItem from="1732908092017" duration="11000" />
-      <workItem from="1732961164545" duration="4028000" />
+      <workItem from="1732961164545" duration="5094000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -363,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732891512784</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="New 5 task">
+      <option name="closed" value="true" />
+      <created>1732965745327</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1732965745327</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,6 +388,7 @@
     <MESSAGE value="Edit" />
     <MESSAGE value="Add documentation" />
     <MESSAGE value="Add documentation add answers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add documentation add answers" />
+    <MESSAGE value="New 5 task" />
+    <option name="LAST_COMMIT_MESSAGE" value="New 5 task" />
   </component>
 </project>
