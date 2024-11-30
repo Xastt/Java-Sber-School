@@ -22,12 +22,8 @@ public class CalculatorImpl implements Calculator {
 
     @Override
     public int calc(int number) {
-        try{
-            if (number < 0) {
+        if (number < 0) {
                 throw new ArithmeticException("Number should be positive");
-            }
-        }catch (ArithmeticException e){
-            System.out.println(e.getMessage());
         }
         return factorial(number);
     }
