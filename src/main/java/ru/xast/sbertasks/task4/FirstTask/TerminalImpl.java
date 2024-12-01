@@ -89,12 +89,7 @@ public class TerminalImpl implements Terminal {
             pinCode.setLength(0);
             access = true;
         } else {
-            try{
-                failedAttempts++;
-                throw new InvalidPinException("Incorrect PIN");
-            }catch (InvalidPinException e){
-                System.out.println(e.getMessage());
-            }
+            failedAttempts++;
             if (failedAttempts > 3) {
                 try{
                     lockTime = LocalDateTime.now().plusSeconds(10);
