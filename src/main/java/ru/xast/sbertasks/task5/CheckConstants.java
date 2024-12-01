@@ -3,6 +3,10 @@ package ru.xast.sbertasks.task5;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
+/**
+ * class for checking if constants equals their names
+ * @author Khasrovyan Artyom
+ */
 public class CheckConstants {
     public static void main(String[] args) {
         checkConstants(CalculatorImpl.class);

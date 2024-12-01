@@ -5,6 +5,10 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * class for cashing proxy
+ * @author Khasrovyan Artyom
+ */
 public class CashProxy implements InvocationHandler {
     private final Object target;
     private final Map<Integer, Integer> cache = new HashMap<>();

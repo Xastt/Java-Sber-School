@@ -2,6 +2,10 @@ package ru.xast.sbertasks.task5;
 
 import java.lang.reflect.Method;
 
+/**
+ * class which copy all information from one class to another
+ * @author Khasrovyan Artyom
+ */
 public class BeanUtils {
     /**
      * Scans object "from" for all getters. If object "to"

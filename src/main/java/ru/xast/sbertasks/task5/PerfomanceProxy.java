@@ -3,6 +3,12 @@ package ru.xast.sbertasks.task5;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+/**
+ * class which check annotations and if method has annotation @Metric
+ * when class will record how long does this method works
+ * @see Metric
+ * @author Khasrovyan Artyom
+ */
 public class PerfomanceProxy implements InvocationHandler {
     private Object target;
 

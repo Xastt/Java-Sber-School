@@ -8,9 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="New 5 task">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/BeanUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/BeanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/CalculatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/CalculatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/CashProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/CashProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/CheckConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/CheckConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/GetAllGetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/GetAllGetters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/GetAllMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/GetAllMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/PerfomanceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task5/PerfomanceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task5/CalculatorImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task5/CalculatorImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +61,7 @@
     "Application.UrlContentReader.executor": "Run",
     "Application.ru.xast.sbertasks.task3.SecondTask.Main.executor": "Run",
     "Application.ru.xast.sbertasks.task4.FirstTask.Main.executor": "Run",
+    "JUnit.CalculatorImplTest.executor": "Run",
     "JUnit.CollectionUtilsTest.executor": "Run",
     "JUnit.CountMapImplTest.executor": "Run",
     "JUnit.MainTest.executor": "Run",
@@ -93,7 +103,7 @@
       <recent name="ru.xast.sbertasks" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorImplTest">
+  <component name="RunManager" selected="Application.TerminalImpl">
     <configuration name="CheckConstants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task5.CheckConstants" />
       <module name="JavaSberSchool" />
@@ -120,8 +130,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetAllMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task5.GetAllMethods" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task5.Main" />
       <module name="JavaSberSchool" />
       <extension name="coverage">
         <pattern>
@@ -133,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task5.Main" />
+    <configuration name="TerminalImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task4.FirstTask.TerminalImpl" />
       <module name="JavaSberSchool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task5.*" />
+          <option name="PATTERN" value="ru.xast.sbertasks.task4.FirstTask.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TerminalImpl" />
         <item itemvalue="JUnit.CalculatorImplTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.CheckConstants" />
         <item itemvalue="Application.GetAllGetters" />
-        <item itemvalue="Application.GetAllMethods" />
       </list>
     </recent_temporary>
   </component>
@@ -213,6 +223,7 @@
       <workItem from="1732884290393" duration="7330000" />
       <workItem from="1732908092017" duration="11000" />
       <workItem from="1732961164545" duration="5094000" />
+      <workItem from="1732977269830" duration="1903000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />

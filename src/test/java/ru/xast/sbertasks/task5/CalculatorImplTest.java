@@ -3,6 +3,11 @@ package ru.xast.sbertasks.task5;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * class for testing how CalculatorImpl works
+ * @see CalculatorImpl
+ * @author Khasrovyan Artyom
+ */
 public class CalculatorImplTest {
 
     @Test

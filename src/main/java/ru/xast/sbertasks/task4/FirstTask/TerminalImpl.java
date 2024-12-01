@@ -89,7 +89,6 @@ public class TerminalImpl implements Terminal {
             pinCode.setLength(0);
             access = true;
         } else {
-            access = false;
             try{
                 failedAttempts++;
                 throw new InvalidPinException("Incorrect PIN");

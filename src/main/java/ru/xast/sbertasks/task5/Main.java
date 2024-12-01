@@ -1,5 +1,10 @@
 package ru.xast.sbertasks.task5;
 
+/**
+ * classes which uses for testing how BeanUtils is working
+ * @see BeanUtils
+ */
+
 class Person {
     private String name;
     private int age;

@@ -1,5 +1,10 @@
 package ru.xast.sbertasks.task5;
 
+/**
+ * Class which use for realise interface Calculator
+ * @see Calculator
+ * @author Khasrovyan Artyom
+ */
 public class CalculatorImpl implements Calculator {
 
     public static final String MONDAY = "MONDAY";
