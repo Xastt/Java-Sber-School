@@ -7,16 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add ArrayIterator and ArrayIteratorTest">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task6/socialNetwork/FriendService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task6/socialNetwork/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task6/socialNetwork/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task6/socialNetwork/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task6/socialNetwork/Photo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task6/socialNetwork/PhotoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task6/socialNetwork/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task6/socialNetwork/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task6/socialNetwork/User.java" afterDir="false" />
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="task6 - social network">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task4/FirstTask/TerminalConsoleApp.java" afterDir="false" />
@@ -80,7 +71,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProj/SBER-SCHOOL/JavaSberSchool",
+    "last_opened_file_path": "D:/JavaProj/SBER-SCHOOL",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -232,7 +223,9 @@
       <workItem from="1733069963577" duration="1553000" />
       <workItem from="1733124108532" duration="17000" />
       <workItem from="1733246149402" duration="378000" />
-      <workItem from="1733246567435" duration="4073000" />
+      <workItem from="1733246567435" duration="5279000" />
+      <workItem from="1733297279194" duration="1171000" />
+      <workItem from="1733298537080" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -418,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733248058333</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="task6 - social network">
+      <option name="closed" value="true" />
+      <created>1733250981613</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1733250981613</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,6 +445,7 @@
     <MESSAGE value="change TerminalImpl" />
     <MESSAGE value="Add answers on control questions" />
     <MESSAGE value="Add ArrayIterator and ArrayIteratorTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ArrayIterator and ArrayIteratorTest" />
+    <MESSAGE value="task6 - social network" />
+    <option name="LAST_COMMIT_MESSAGE" value="task6 - social network" />
   </component>
 </project>
