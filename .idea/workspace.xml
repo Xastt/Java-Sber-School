@@ -7,13 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="delete directory">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task7/org/example/EncryptedClassloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task7/org/example/Encryptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task7/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task7/org/example/instance/Sample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task7/org/example/EncryptedClassloaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task7/org/example/data/TestClass.java" afterDir="false" />
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new task with ClassLoaders">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +25,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -105,13 +107,13 @@
       <recent name="ru.xast.sbertasks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ru.xast.sbertasks.task7.org.example.Main">
-    <configuration name="TerminalConsoleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task4.FirstTask.TerminalConsoleApp" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task8.CashingProxy.Main" />
       <module name="JavaSberSchool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task4.FirstTask.*" />
+          <option name="PATTERN" value="ru.xast.sbertasks.task8.CashingProxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,8 +121,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TerminalImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task4.FirstTask.TerminalImpl" />
+    <configuration name="TerminalConsoleApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task4.FirstTask.TerminalConsoleApp" />
       <module name="JavaSberSchool" />
       <extension name="coverage">
         <pattern>
@@ -179,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ru.xast.sbertasks.task7.org.example.Main" />
         <item itemvalue="JUnit.EncryptedClassloaderTest.findClass" />
         <item itemvalue="JUnit.ArrayIteratorTest.testArrayIterator" />
         <item itemvalue="Application.TerminalConsoleApp" />
-        <item itemvalue="Application.TerminalImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +243,8 @@
       <workItem from="1733410719344" duration="1409000" />
       <workItem from="1733481252103" duration="15000" />
       <workItem from="1733658437654" duration="4435000" />
-      <workItem from="1733662907853" duration="818000" />
+      <workItem from="1733662907853" duration="1514000" />
+      <workItem from="1733902492168" duration="2513000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -443,7 +446,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733382956267</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add new task with ClassLoaders">
+      <option name="closed" value="true" />
+      <created>1733663998340</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1733663998340</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add new task with ClassLoaders">
+      <option name="closed" value="true" />
+      <created>1733664063727</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1733664063727</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,6 +501,7 @@
     <MESSAGE value="Add ArrayIterator and ArrayIteratorTest" />
     <MESSAGE value="task6 - social network" />
     <MESSAGE value="delete directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete directory" />
+    <MESSAGE value="Add new task with ClassLoaders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new task with ClassLoaders" />
   </component>
 </project>
