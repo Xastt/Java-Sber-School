@@ -7,15 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new task with ClassLoaders">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/Main.java" afterDir="false" />
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new task with CashingProxy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +238,7 @@
       <workItem from="1733481252103" duration="15000" />
       <workItem from="1733658437654" duration="4435000" />
       <workItem from="1733662907853" duration="1514000" />
-      <workItem from="1733902492168" duration="2513000" />
+      <workItem from="1733902492168" duration="3182000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -462,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733664063727</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add new task with CashingProxy">
+      <option name="closed" value="true" />
+      <created>1733905323468</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1733905323468</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,6 +504,7 @@
     <MESSAGE value="task6 - social network" />
     <MESSAGE value="delete directory" />
     <MESSAGE value="Add new task with ClassLoaders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new task with ClassLoaders" />
+    <MESSAGE value="Add new task with CashingProxy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new task with CashingProxy" />
   </component>
 </project>

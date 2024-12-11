@@ -1,8 +1,6 @@
 package ru.xast.sbertasks.task8.CashingProxy;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class CacheServiceImpl implements CacheService {
     @Override

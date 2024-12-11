@@ -1,7 +1,6 @@
 package ru.xast.sbertasks.task8.CashingProxy;
 
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public interface CacheService {
     @Cache(cacheType = CacheType.FILE, fileName = "data", zip = true, identityBy = {String.class, double.class})

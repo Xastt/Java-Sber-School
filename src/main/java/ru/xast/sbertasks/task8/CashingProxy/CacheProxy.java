@@ -1,13 +1,9 @@
 package ru.xast.sbertasks.task8.CashingProxy;
 
 import java.io.*;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
+import java.lang.reflect.*;
+import java.nio.file.*;
+import java.util.zip.*;
 
 @SuppressWarnings("unchecked")
 public class CacheProxy {
@@ -61,7 +57,7 @@ public class CacheProxy {
         private String generateCacheKey(Method method, Object[] args) {
             StringBuilder key = new StringBuilder(method.getName());
             for (Object arg : args) {
-                key.append("_").append(arg);
+                key.append("_").append(arg != null ? arg.toString().replaceAll("[<>:\"/\\|?*]", "_"):null);
             }
             return key.toString();
         }
@@ -71,7 +67,7 @@ public class CacheProxy {
         }
 
         private Object fetchFromFileCache(String cacheKey, Method method, Object[] args, Cache cache) throws Throwable {
-            String filePath = rootPath + File.separator + cache.fileName() + cacheKey + ".ser";
+            String filePath = createFilePath(cache, cacheKey);
             if (Files.exists(Paths.get(filePath))) {
                 return deserialize(filePath);
             } else {
@@ -81,8 +77,14 @@ public class CacheProxy {
             }
         }
 
+
+        private String createFilePath(Cache cache, String cacheKey) {
+            return rootPath + File.separator + (cache.fileName().isEmpty() ? "" : cache.fileName() + "_") + cacheKey + ".ser";
+        }
+
+
         private void serialize(String filePath, Object obj) throws IOException {
-            try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filePath))) {
+            try (ObjectOutputStream out = new ObjectOutputStream(Files.newOutputStream(Paths.get(filePath)))) {
                 out.writeObject(obj);
                 if (cacheSettings.isZip()) {
                     zipFile(filePath);
@@ -91,13 +93,13 @@ public class CacheProxy {
         }
 
         private Object deserialize(String filePath) throws IOException, ClassNotFoundException {
-            try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(filePath))) {
+            try (ObjectInputStream in = new ObjectInputStream(Files.newInputStream(Paths.get(filePath)))) {
                 return in.readObject();
             }
         }
 
         private void zipFile(String filePath) throws IOException {
-            try (ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(filePath + ".zip"))) {
+            try (ZipOutputStream zos = new ZipOutputStream(Files.newOutputStream(Paths.get(filePath + ".zip")))) {
                 File fileToZip = new File(filePath);
                 try (FileInputStream fis = new FileInputStream(fileToZip)) {
                     zos.putNextEntry(new ZipEntry(fileToZip.getName()));
