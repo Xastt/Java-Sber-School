@@ -11,7 +11,7 @@ public class Main {
         System.out.println(cacheService.run("first", 10, new Date()));
         System.out.println(cacheService.run("second", 20, new Date()));
         System.out.println(cacheService.run("third", 30, new Date()));
-        System.out.println(cacheService.run("first", 10, new Date()));
+        System.out.println(cacheService.run("first", 10, new Date())); //from cache
 
     }
 }
