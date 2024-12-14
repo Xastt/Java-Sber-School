@@ -23,4 +23,20 @@ class StreamsTest {
         assertEquals("JACK", nameMap.get(4));
     }
 
+    @Test
+    void testAllOperationsWithPerson(){
+        List<Person> users = Arrays.asList(
+                new Person("Alice", 20),
+                new Person("Jack",21),
+                new Person( "Bob",22),
+                new Person("Den", 23));
+
+        Map<String, Person> sortedUsers = Streams.of(users)
+                .filter(n -> n.getAge() > 20)
+                .transform(n -> new Person(n.getName(), n.getAge()+10))
+                .toMap(Person::getName, n->n);
+
+        System.out.println(sortedUsers);
+    }
+
 }
