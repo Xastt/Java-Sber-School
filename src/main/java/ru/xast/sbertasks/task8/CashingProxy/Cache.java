@@ -2,6 +2,11 @@ package ru.xast.sbertasks.task8.CashingProxy;
 
 import java.lang.annotation.*;
 
+/**
+ * Annotation for working with cash
+ * @see CacheService
+ * @author Khasrovyan Artyom
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface Cache {

@@ -5,6 +5,11 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+/**
+ * class which realize all stream methods
+ * @param <T>
+ * @author Khasrovyan Artyom
+ */
 public class Streams<T> {
 
     private final List<T> collection;

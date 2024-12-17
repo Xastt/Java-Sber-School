@@ -2,6 +2,11 @@ package ru.xast.sbertasks.task8.CashingProxy;
 
 import java.util.*;
 
+/**
+ * implements interface CacheService
+ * @see CacheService
+ * @author Khasrovyan Artyom
+ */
 public class CacheServiceImpl implements CacheService {
     @Override
     public List<String> run(String item, double value, Date date) {

@@ -2,6 +2,9 @@ package ru.xast.sbertasks.task8.CashingProxy;
 
 import java.util.Date;
 
+/**
+ * Class for testing how caching proxy work
+ */
 public class Main {
     public static void main(String[] args) {
         CacheSettings cacheSettings = new CacheSettings(true);

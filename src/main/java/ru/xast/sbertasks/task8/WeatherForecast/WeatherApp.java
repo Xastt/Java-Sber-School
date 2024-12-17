@@ -8,6 +8,11 @@ import okhttp3.Response;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Main app for working with WeatherApi
+ * @see WeatherResponse
+ * @author Khasrovyan Artyom
+ */
 public class WeatherApp {
     private static final String API_KEY = "aba361e23521468babd83914241112";
     private static final String BASE_URL = "https://api.weatherapi.com/v1/current.json";
@@ -31,6 +36,12 @@ public class WeatherApp {
         }
     }
 
+    /**
+     * method which, send request on server and get response
+     * @param url
+     * @return response
+     * @throws IOException
+     */
     private static String getWeatherData(String url) throws IOException {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
@@ -42,6 +53,12 @@ public class WeatherApp {
         }
     }
 
+    /**
+     * parse response, show to user only needed values
+     * @param json
+     * @return readable response
+     * @throws IOException
+     */
     private static WeatherResponse parseWeatherData(String json) throws IOException{
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.readValue(json, WeatherResponse.class);

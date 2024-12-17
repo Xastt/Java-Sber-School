@@ -1,8 +1,12 @@
 package ru.xast.sbertasks.task9;
 
 import lombok.Getter;
-import lombok.Setter;
 
+/**
+ * Class working with Streams
+ * @see Streams
+ * @author Khasrovyan Artyom
+ */
 @Getter
 public class Person {
     private String name;
