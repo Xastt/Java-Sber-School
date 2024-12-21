@@ -7,18 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new 10 task">
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add doc">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/FixedThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ScalableThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/answers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task11/ThreadsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/Cache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/WeatherForecast/WeatherResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/WeatherForecast/WeatherResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task10/DigitNumOutputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task10/DigitNumOutputTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task10/FactorialCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task10/FactorialCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +25,9 @@
       <list>
         <option value="Kotlin Class" />
         <option value="AnnotationType" />
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -61,6 +56,7 @@
     "Application.MainPhone.executor": "Run",
     "Application.TerminalConsoleApp.executor": "Run",
     "Application.TerminalImpl.executor": "Run",
+    "Application.ThreadsTest.executor": "Run",
     "Application.UrlContentReader.executor": "Run",
     "Application.WeatherApp.executor": "Run",
     "Application.ru.xast.sbertasks.task3.SecondTask.Main.executor": "Run",
@@ -124,7 +120,7 @@
       <recent name="ru.xast.sbertasks" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DigitNumOutputTest.startThreadWorking">
+  <component name="RunManager" selected="Application.ThreadsTest">
     <configuration name="DigitNumOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task10.DigitNumOutput" />
       <module name="JavaSberSchool" />
@@ -144,6 +140,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.xast.sbertasks.task10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task11.ThreadsTest" />
+      <module name="JavaSberSchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xast.sbertasks.task11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,29 +191,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FactorialCalculatorTest.testReadAndCalculate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSberSchool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.xast.sbertasks.task10" />
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task10.FactorialCalculatorTest" />
-      <option name="METHOD_NAME" value="testReadAndCalculate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadsTest" />
         <item itemvalue="JUnit.DigitNumOutputTest.startThreadWorking" />
         <item itemvalue="JUnit.FactorialCalculatorTest" />
         <item itemvalue="Application.DigitNumOutput" />
         <item itemvalue="Application.FactorialCalculator" />
-        <item itemvalue="JUnit.FactorialCalculatorTest.testReadAndCalculate" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +267,9 @@
       <workItem from="1734364767160" duration="201000" />
       <workItem from="1734448041926" duration="2124000" />
       <workItem from="1734457092315" duration="1055000" />
-      <workItem from="1734460534968" duration="1399000" />
+      <workItem from="1734460534968" duration="1750000" />
+      <workItem from="1734504057100" duration="143000" />
+      <workItem from="1734782430088" duration="3472000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -548,7 +543,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734457729337</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Add doc">
+      <option name="closed" value="true" />
+      <created>1734462282374</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1734462282374</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Доп.задание LinkedList VS ArrayList" />
     <MESSAGE value="Change README.md" />
     <MESSAGE value="New Task" />
     <MESSAGE value="Start doing first task" />
@@ -591,6 +593,7 @@
     <MESSAGE value="Add new task 9" />
     <MESSAGE value="Add test for working with class objects" />
     <MESSAGE value="Add new 10 task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new 10 task" />
+    <MESSAGE value="Add doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add doc" />
   </component>
 </project>
