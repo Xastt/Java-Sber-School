@@ -3,9 +3,7 @@ package ru.xast.sbertasks.task12.dao.impl;
 import ru.xast.sbertasks.task12.dao.interfaces.PersInfDao;
 import ru.xast.sbertasks.task12.models.PersInf;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 import static ru.xast.sbertasks.task12.utils.DataSource.connection;
 

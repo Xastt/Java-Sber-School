@@ -1,8 +1,6 @@
 package ru.xast.sbertasks.task12.dao.interfaces;
 
-import ru.xast.sbertasks.task12.models.PersInf;
-import ru.xast.sbertasks.task12.models.ProfInf;
-import ru.xast.sbertasks.task12.models.SkillOut;
+import ru.xast.sbertasks.task12.models.*;
 
 import java.sql.SQLException;
 import java.util.List;

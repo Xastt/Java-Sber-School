@@ -1,15 +1,10 @@
 package ru.xast.sbertasks.task12.dao.impl;
 
 import ru.xast.sbertasks.task12.dao.interfaces.ProfInfDao;
-import ru.xast.sbertasks.task12.models.PersInf;
-import ru.xast.sbertasks.task12.models.ProfInf;
-import ru.xast.sbertasks.task12.models.SkillOut;
+import ru.xast.sbertasks.task12.models.*;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.*;
+import java.util.*;
 
 import static ru.xast.sbertasks.task12.utils.DataSource.connection;
 
