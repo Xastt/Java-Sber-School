@@ -7,12 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add doc">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/FixedThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ScalableThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/answers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task11/ThreadsTest.java" afterDir="false" />
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new 11 task">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task12/DataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task12/dao/impl/PersInfDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task12/dao/impl/ProfInfDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task12/dao/interfaces/PersInfDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task12/dao/interfaces/ProfInfDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task12/models/PersInf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task12/models/ProfInf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task12/models/SkillOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -269,7 +272,10 @@
       <workItem from="1734457092315" duration="1055000" />
       <workItem from="1734460534968" duration="1750000" />
       <workItem from="1734504057100" duration="143000" />
-      <workItem from="1734782430088" duration="3472000" />
+      <workItem from="1734782430088" duration="3885000" />
+      <workItem from="1734792871176" duration="61000" />
+      <workItem from="1734861592519" duration="167000" />
+      <workItem from="1735200843530" duration="1456000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -551,7 +557,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734462282374</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Add new 11 task">
+      <option name="closed" value="true" />
+      <created>1734786231584</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1734786231584</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +583,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change README.md" />
     <MESSAGE value="New Task" />
     <MESSAGE value="Start doing first task" />
     <MESSAGE value="Added TerminalRun, doesn't work correctly" />
@@ -594,6 +607,7 @@
     <MESSAGE value="Add test for working with class objects" />
     <MESSAGE value="Add new 10 task" />
     <MESSAGE value="Add doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add doc" />
+    <MESSAGE value="Add new 11 task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new 11 task" />
   </component>
 </project>
