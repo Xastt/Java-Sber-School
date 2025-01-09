@@ -3,6 +3,10 @@ package ru.xast.sbertasks.task11;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
+/**
+ * class which realize scalable thread pool
+ * @author Khasrovyan Artyom
+ */
 public class ScalableThreadPool implements ThreadPool {
 
     private final int minPoolSize;

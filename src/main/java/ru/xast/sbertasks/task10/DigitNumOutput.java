@@ -2,6 +2,12 @@ package ru.xast.sbertasks.task10;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * class which prints out numbers and letters
+ * using multithreading without synchronized blocks.
+ * Synchronization is working with the help of AtomicInteger class
+ * @author Khasrovyan Artyom
+ */
 public class DigitNumOutput {
 
     private static final String NUMBERS = "0123456789";

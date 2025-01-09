@@ -4,6 +4,11 @@ import java.io.*;
 import java.math.BigInteger;
 import java.util.concurrent.*;
 
+/**
+ * program calculates factorial of numbers
+ * using multithreading
+ * @author Khasrovyan Artyom
+ */
 public class FactorialCalculator {
 
     public void readAndCalculate(String filePath) {

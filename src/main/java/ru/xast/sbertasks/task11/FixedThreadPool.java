@@ -3,6 +3,10 @@ package ru.xast.sbertasks.task11;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
+/**
+ * class which realize Fixed Thread Pool
+ * @author Khasrovyan Artyom
+ */
 public class FixedThreadPool implements ThreadPool {
 
     private final int nThreads;

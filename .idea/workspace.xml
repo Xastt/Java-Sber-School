@@ -8,8 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new 12 task">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task12/UsingPrincipeOfArchitecture" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task10/DigitNumOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task10/DigitNumOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task10/FactorialCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task10/FactorialCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/FixedThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/FixedThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ScalableThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ScalableThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +273,9 @@
       <workItem from="1734782430088" duration="3885000" />
       <workItem from="1734792871176" duration="61000" />
       <workItem from="1734861592519" duration="167000" />
-      <workItem from="1735200843530" duration="2067000" />
+      <workItem from="1735200843530" duration="2178000" />
+      <workItem from="1735281087214" duration="505000" />
+      <workItem from="1736416522659" duration="911000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -566,7 +573,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735202584693</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Add new 12 task">
+      <option name="closed" value="true" />
+      <created>1735202960855</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1735202960855</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add new 12 task">
+      <option name="closed" value="true" />
+      <created>1735203032921</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1735203032921</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

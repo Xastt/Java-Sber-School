@@ -3,6 +3,9 @@ package ru.xast.sbertasks.task8.CashingProxy;
 import java.io.*;
 import java.lang.reflect.*;
 import java.nio.file.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.locks.ReadWriteLock;
 import java.util.zip.*;
 
 /**
@@ -17,6 +20,8 @@ public class CacheProxy {
 
     private final String rootPath;
     private final CacheSettings cacheSettings;
+    private final ConcurrentHashMap<String, Object> inMemoryCache = new ConcurrentHashMap<>();
+    private final ConcurrentMap<String, ReadWriteLock> locks = new ConcurrentHashMap<>();
 
     public CacheProxy(String rootPath, CacheSettings cacheSettings) {
         this.rootPath = rootPath;
@@ -46,11 +51,15 @@ public class CacheProxy {
         private final Object service;
         private final String rootPath;
         private final CacheSettings cacheSettings;
+        private final ConcurrentHashMap<String, Object> inMemoryCache;
+        private final ConcurrentMap<String, ReadWriteLock> locks;
 
-        public CacheInvocationHandler(Object service, String rootPath, CacheSettings cacheSettings) {
+        public CacheInvocationHandler(Object service, String rootPath, CacheSettings cacheSettings, ConcurrentHashMap<String, Object> inMemoryCache, ConcurrentMap<String, ReadWriteLock> locks) {
             this.service = service;
             this.rootPath = rootPath;
             this.cacheSettings = cacheSettings;
+            this.inMemoryCache = inMemoryCache;
+            this.locks = locks;
         }
 
         /**
@@ -101,8 +110,28 @@ public class CacheProxy {
          * @return data from cache
          * @throws Throwable
          */
-        private Object fetchFromInMemoryCache(String cacheKey, Method method, Object[] args) throws Throwable {
-            return method.invoke(service, args);
+        private Object fetchFromInMemoryCache(String cacheKey, Method method, Object[] args, ReadWriteLock lock) throws Throwable {
+            lock.readLock().lock();
+            try {
+                if (inMemoryCache.containsKey(cacheKey)) {
+                    return inMemoryCache.get(cacheKey);
+                }
+            } finally {
+                lock.readLock().unlock();
+            }
+
+            lock.writeLock().lock();
+            try {
+                if (!inMemoryCache.containsKey(cacheKey)) {
+                    Object result = method.invoke(service, args);
+                    inMemoryCache.put(cacheKey, result);
+                    return result;
+                } else {
+                    return inMemoryCache.get(cacheKey);
+                }
+            } finally {
+                lock.writeLock().unlock();
+            }
         }
 
         /**
@@ -113,14 +142,28 @@ public class CacheProxy {
          * @param cache
          * @throws Throwable
          */
-        private Object fetchFromFileCache(String cacheKey, Method method, Object[] args, Cache cache) throws Throwable {
+        private Object fetchFromFileCache(String cacheKey, Method method, Object[] args, Cache cache, ReadWriteLock lock) throws Throwable {
             String filePath = createFilePath(cache, cacheKey);
-            if (Files.exists(Paths.get(filePath))) {
-                return deserialize(filePath);
-            } else {
-                Object result = method.invoke(service, args);
-                serialize(filePath, result);
-                return result;
+            lock.readLock().lock();
+            try {
+                if (Files.exists(Paths.get(filePath))) {
+                    return deserialize(filePath);
+                }
+            } finally {
+                lock.readLock().unlock();
+            }
+
+            lock.writeLock().lock();
+            try {
+                if (!Files.exists(Paths.get(filePath))) {
+                    Object result = method.invoke(service, args);
+                    serialize(filePath, result);
+                    return result;
+                } else {
+                    return deserialize(filePath);
+                }
+            } finally {
+                lock.writeLock().unlock();
             }
         }
 

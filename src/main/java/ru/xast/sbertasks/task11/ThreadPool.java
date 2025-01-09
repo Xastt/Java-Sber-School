@@ -1,5 +1,10 @@
 package ru.xast.sbertasks.task11;
 
+/**
+ * interface which contains basic operations
+ * with thread's
+ * @author Khasrovyan Artyom
+ */
 public interface ThreadPool {
     /**
      * Starts thread's
