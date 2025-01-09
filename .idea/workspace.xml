@@ -7,13 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new 12 task">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task10/DigitNumOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task10/DigitNumOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task10/FactorialCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task10/FactorialCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/FixedThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/FixedThreadPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ScalableThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ScalableThreadPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ThreadPool.java" afterDir="false" />
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Modify CacheProxy">
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task8/CashingProxy/CacheProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -275,7 +269,7 @@
       <workItem from="1734861592519" duration="167000" />
       <workItem from="1735200843530" duration="2178000" />
       <workItem from="1735281087214" duration="505000" />
-      <workItem from="1736416522659" duration="911000" />
+      <workItem from="1736416522659" duration="1243000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -589,7 +583,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735203032921</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Modify CacheProxy">
+      <option name="closed" value="true" />
+      <created>1736417774325</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1736417774325</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +609,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Start doing first task" />
     <MESSAGE value="Added TerminalRun, doesn't work correctly" />
     <MESSAGE value="Added completed second task" />
     <MESSAGE value="try to solve problem" />
@@ -632,6 +633,7 @@
     <MESSAGE value="Add doc" />
     <MESSAGE value="Add new 11 task" />
     <MESSAGE value="Add new 12 task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new 12 task" />
+    <MESSAGE value="Modify CacheProxy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify CacheProxy" />
   </component>
 </project>

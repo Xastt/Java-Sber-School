@@ -6,6 +6,7 @@ import java.nio.file.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.zip.*;
 
 /**
@@ -76,11 +77,12 @@ public class CacheProxy {
             Cache cache = method.getAnnotation(Cache.class);
             if(cache != null){
                 String cacheKey = generateCacheKey(method, args);
+                ReadWriteLock lock = locks.computeIfAbsent(cacheKey, k -> new ReentrantReadWriteLock());
                 switch (cache.cacheType()){
                     case IN_MEMORY:
-                        return fetchFromInMemoryCache(cacheKey,method,args);
+                        return fetchFromInMemoryCache(cacheKey,method,args,lock);
                     case FILE:
-                        return fetchFromFileCache(cacheKey, method, args, cache);
+                        return fetchFromFileCache(cacheKey, method, args, cache, lock);
                     default:
                         throw new UnsupportedOperationException("Unsupported cache type: " + cache.cacheType());
 
