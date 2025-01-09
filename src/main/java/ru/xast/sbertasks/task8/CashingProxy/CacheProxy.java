@@ -38,7 +38,7 @@ public class CacheProxy {
         return (T) Proxy.newProxyInstance(
                 service.getClass().getClassLoader(),
                 service.getClass().getInterfaces(),
-                new CacheInvocationHandler(service, rootPath, cacheSettings)
+                new CacheInvocationHandler(service, rootPath, cacheSettings, inMemoryCache, locks)
         );
     }
 
