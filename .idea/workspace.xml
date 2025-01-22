@@ -7,8 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Modify CacheProxy">
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Change text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/FixedThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/FixedThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ScalableThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ScalableThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/ThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task11/ThreadsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task11/ThreadsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,64 +43,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ArrayWithWords.executor": "Run",
-    "Application.CheckConstants.executor": "Run",
-    "Application.FactorialCalculator.executor": "Run",
-    "Application.GetAllGetters.executor": "Run",
-    "Application.GetAllMethods.executor": "Debug",
-    "Application.LinkedVsArray.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MainPhone.executor": "Run",
-    "Application.TerminalConsoleApp.executor": "Run",
-    "Application.TerminalImpl.executor": "Run",
-    "Application.ThreadsTest.executor": "Run",
-    "Application.UrlContentReader.executor": "Run",
-    "Application.WeatherApp.executor": "Run",
-    "Application.ru.xast.sbertasks.task3.SecondTask.Main.executor": "Run",
-    "Application.ru.xast.sbertasks.task4.FirstTask.Main.executor": "Run",
-    "Application.ru.xast.sbertasks.task7.Main.executor": "Run",
-    "Application.ru.xast.sbertasks.task7.org.example.Main.executor": "Run",
-    "Application.ru.xast.sbertasks.task9.Main.executor": "Run",
-    "JUnit.ArrayIteratorTest.testArrayIterator.executor": "Run",
-    "JUnit.CalculatorImplTest.executor": "Run",
-    "JUnit.CollectionUtilsTest.executor": "Run",
-    "JUnit.CountMapImplTest.executor": "Run",
-    "JUnit.DigitNumOutputTest.startThreadWorking.executor": "Run",
-    "JUnit.EncryptedClassloaderTest.findClass.executor": "Run",
-    "JUnit.FactorialCalculatorTest.executor": "Run",
-    "JUnit.FactorialCalculatorTest.testReadAndCalculate.executor": "Run",
-    "JUnit.MainTest.executor": "Run",
-    "JUnit.ParentChildTest.executor": "Run",
-    "JUnit.ParentChildTest.testChildConstructorWithParams.executor": "Run",
-    "JUnit.ParentChildTest.testChildConstructorWithoutParams.executor": "Run",
-    "JUnit.ParentTest.TestDefConstructor.executor": "Run",
-    "JUnit.ParentTest.executor": "Run",
-    "JUnit.PhoneNumberTest.executor": "Run",
-    "JUnit.PhoneNumberTest.testGetExistingSurname.executor": "Run",
-    "JUnit.StreamsTest.testAllOperations.executor": "Run",
-    "JUnit.StreamsTest.testAllOperationsWithPerson.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProj/Architec/SkillSwap",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ArrayWithWords.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CheckConstants.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FactorialCalculator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GetAllGetters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GetAllMethods.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LinkedVsArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainPhone.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TerminalConsoleApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TerminalImpl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadsTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UrlContentReader.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WeatherApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task3.SecondTask.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task4.FirstTask.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task7.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task7.org.example.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task9.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayIteratorTest.testArrayIterator.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CollectionUtilsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CountMapImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DigitNumOutputTest.startThreadWorking.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EncryptedClassloaderTest.findClass.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FactorialCalculatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FactorialCalculatorTest.testReadAndCalculate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParentChildTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParentChildTest.testChildConstructorWithParams.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParentChildTest.testChildConstructorWithoutParams.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParentTest.TestDefConstructor.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PhoneNumberTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PhoneNumberTest.testGetExistingSurname.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StreamsTest.testAllOperations.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StreamsTest.testAllOperationsWithPerson.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaProj/SBER-SCHOOL/JavaSberSchool&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -271,6 +275,9 @@
       <workItem from="1735281087214" duration="505000" />
       <workItem from="1736416522659" duration="1772000" />
       <workItem from="1736493629063" duration="18000" />
+      <workItem from="1736602908172" duration="1059000" />
+      <workItem from="1737554279452" duration="1076000" />
+      <workItem from="1737562505692" duration="1767000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md, change file structure">
       <option name="closed" value="true" />
@@ -608,7 +615,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736417937472</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Modify CacheProxy">
+      <option name="closed" value="true" />
+      <created>1736602971563</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1736602971563</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Change text">
+      <option name="closed" value="true" />
+      <created>1736603019642</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1736603019642</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,7 +649,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added TerminalRun, doesn't work correctly" />
     <MESSAGE value="Added completed second task" />
     <MESSAGE value="try to solve problem" />
     <MESSAGE value="Change method checkBalance return -&gt; void" />
@@ -651,6 +673,7 @@
     <MESSAGE value="Add new 11 task" />
     <MESSAGE value="Add new 12 task" />
     <MESSAGE value="Modify CacheProxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify CacheProxy" />
+    <MESSAGE value="Change text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change text" />
   </component>
 </project>

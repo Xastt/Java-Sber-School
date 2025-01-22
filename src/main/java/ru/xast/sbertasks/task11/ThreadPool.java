@@ -1,5 +1,7 @@
 package ru.xast.sbertasks.task11;
 
+import java.util.List;
+
 /**
  * interface which contains basic operations
  * with thread's
@@ -17,4 +19,15 @@ public interface ThreadPool {
      * @param runnable
      */
     void execute(Runnable runnable);
+
+    /**
+     * shutdown the pool, new tasks will not be accepted.
+     */
+    void shutdown();
+
+    /**
+     * try to stop all actively executing task
+     * @return List
+     */
+    List<Runnable> shutdownNow();
 }

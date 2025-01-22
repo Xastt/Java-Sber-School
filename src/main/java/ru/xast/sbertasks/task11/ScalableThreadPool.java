@@ -1,5 +1,7 @@
 package ru.xast.sbertasks.task11;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -14,6 +16,7 @@ public class ScalableThreadPool implements ThreadPool {
     private final BlockingQueue<Runnable> workQueue;
     private final WorkerThread[] workerThreads;
     private int currentPoolSize;
+    private volatile boolean isShutdown = false;
 
     public ScalableThreadPool(int minPoolSize, int maxPoolSize) {
         this.minPoolSize = minPoolSize;
@@ -42,6 +45,9 @@ public class ScalableThreadPool implements ThreadPool {
      */
     @Override
     public synchronized void execute(Runnable runnable) {
+        if (isShutdown) {
+            throw new IllegalStateException("ThreadPool is shutdown");
+        }
         workQueue.offer(runnable);
         if (workQueue.size() > currentPoolSize && currentPoolSize < maxPoolSize) {
             addWorker();
@@ -58,6 +64,34 @@ public class ScalableThreadPool implements ThreadPool {
             workerThreads[currentPoolSize] = worker;
             currentPoolSize++;
         }
+    }
+
+    /**
+     * Shuts down the pool, new tasks will not be accepted.
+     */
+    public synchronized void shutdown() {
+        isShutdown = true;
+        for (WorkerThread worker : workerThreads) {
+            if(worker != null) {
+                worker.interrupt();
+            }
+        }
+    }
+
+    /**
+     * try to stop all actively executing task
+     * @return List<Runnable>
+     */
+    public synchronized List<Runnable> shutdownNow() {
+        isShutdown = true;
+        List<Runnable> remainingTasks = new ArrayList<>();
+        workQueue.drainTo(remainingTasks);
+        for (WorkerThread worker : workerThreads) {
+            if(worker != null) {
+                worker.interrupt();
+            }
+        }
+        return remainingTasks;
     }
 
     /**
@@ -82,6 +116,9 @@ public class ScalableThreadPool implements ThreadPool {
                     threadPool.reduceWorkerIfNecessary();
                 }catch(InterruptedException e){
                     Thread.currentThread().interrupt();
+                    return;
+                }
+                if(threadPool.isShutdown){
                     return;
                 }
             }

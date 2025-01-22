@@ -1,5 +1,7 @@
 package ru.xast.sbertasks.task11;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -12,6 +14,7 @@ public class FixedThreadPool implements ThreadPool {
     private final int nThreads;
     private final BlockingQueue<Runnable> queue;
     private final WorkerThread[] workers;
+    private volatile boolean isShutdown = false;
 
     public FixedThreadPool(int nThreads) {
         this.nThreads = nThreads;
@@ -37,11 +40,35 @@ public class FixedThreadPool implements ThreadPool {
      */
     @Override
     public void execute(Runnable runnable) {
+        if (isShutdown) {
+            throw new IllegalStateException("ThreadPool is shutdown");
+        }
         try{
             queue.put(runnable);
         }catch(InterruptedException e){
             Thread.currentThread().interrupt();
         }
+    }
+
+    /**
+     * Shuts down the pool, new tasks will not be accepted.
+     */
+    public void shutdown() {
+        isShutdown = true;
+    }
+
+    /**
+     * try to stop all actively executing task
+     * @return List<Runnable>
+     */
+    public List<Runnable> shutdownNow() {
+        isShutdown = true;
+        List<Runnable> remainingTasks = new ArrayList<>();
+        queue.drainTo(remainingTasks);
+        for (WorkerThread worker : workers) {
+            worker.interrupt();
+        }
+        return remainingTasks;
     }
 
     /**
