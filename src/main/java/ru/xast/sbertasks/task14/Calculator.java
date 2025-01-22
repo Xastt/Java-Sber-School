@@ -1,7 +1,6 @@
 package ru.xast.sbertasks.task14;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Class for execution mathematical operations

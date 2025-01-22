@@ -1,7 +1,6 @@
 package ru.xast.sbertasks.task14;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.sql.*;
 import java.util.Properties;
 
