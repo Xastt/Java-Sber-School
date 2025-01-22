@@ -3,7 +3,10 @@ package ru.xast.sbertasks.task14;
 import java.util.ArrayList;
 import java.util.List;
 
-//@SuppressWarnings("unchecked")
+/**
+ * Class for execution mathematical operations
+ */
+@SuppressWarnings("unchecked")
 public class Calculator {
 
     private final Source source;
@@ -12,6 +15,12 @@ public class Calculator {
         this.source = source;
     }
 
+    /**
+     * Calculates the Fibonacci sequence up to the specified number.
+     * Results are cached to avoid repeated calculations.
+     * @param n The number to which to calculate the Fibonacci sequence.
+     * @return List of Fibonacci numbers.
+     */
     @Cachable(DataProviderPSQL.class)
     public List<Integer> fibonachi(int n){
         String cacheKey = "fibonachi_" + n;
@@ -30,7 +39,7 @@ public class Calculator {
             b = next;
         }
         source.save(cacheKey, result);
-        System.out.println("Сохранено в кэш: " + result);
+        System.out.println("Saved to Cache: " + result);
         return result;
     }
 }
