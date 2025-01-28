@@ -5,10 +5,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Component;
 import ru.xast.sbertasks.task16.config.SpringConfig;
-import ru.xast.sbertasks.task16.dao.IngredientDAO;
-import ru.xast.sbertasks.task16.dao.RecipeDAO;
-import ru.xast.sbertasks.task16.models.Ingredient;
-import ru.xast.sbertasks.task16.models.Recipe;
+import ru.xast.sbertasks.task16.dao.*;
+import ru.xast.sbertasks.task16.models.*;
 
 import java.util.Scanner;
 
