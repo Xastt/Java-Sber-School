@@ -18,11 +18,11 @@ public class RecipeDAO {
     @Autowired
     public RecipeDAO(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
-        createTableRecipesIfNotExists();
+        //createTableRecipesIfNotExists();
     }
 
-    private void createTableRecipesIfNotExists() {
-        String sql = "CREATE TABLE IF NOT EXISTS Recipes (id VARCHAR(37) PRIMARY KEY, name VARCHAR(100) NOT NULL)";
+    public void createTableRecipesIfNotExists() {
+        String sql = "CREATE TABLE IF NOT EXISTS Recipes (id VARCHAR(37) PRIMARY KEY, name VARCHAR(100) UNIQUE NOT NULL)";
         jdbcTemplate.execute(sql);
     }
 
@@ -31,16 +31,29 @@ public class RecipeDAO {
         jdbcTemplate.update(sql, recipe.getId(), recipe.getName());
     }
 
-    public void readRecipe(String id) {
+    public Recipe readRecipe(String id) {
         String sql = "SELECT * FROM Recipes WHERE id = ?";
-        jdbcTemplate.query(sql, new Object[]{id}, new BeanPropertyRowMapper<>(Recipe.class))
+        return jdbcTemplate.query(sql, new Object[]{id}, new BeanPropertyRowMapper<>(Recipe.class))
                 .stream().findAny().orElse(null);
     }
 
-    public List<Recipe> getRecipesByName(String name) {
+    private List<Recipe> getRecipesByName(String name) {
         String sql = "SELECT * FROM Recipes WHERE name LIKE ?";
         return jdbcTemplate.query(sql, new Object[]{"%" + name + "%"}, new BeanPropertyRowMapper<>(Recipe.class));
 
+    }
+
+    public void printRecipesByName(String name) {
+        List<Recipe> recipes = getRecipesByName(name);
+
+        if (recipes.isEmpty()) {
+            System.out.println("Рецепты не найдены.");
+        } else {
+            System.out.println("Найденные рецепты:");
+            for (Recipe recipe : recipes) {
+                System.out.println(recipe);
+            }
+        }
     }
 
     public void deleteRecipe(String id) {

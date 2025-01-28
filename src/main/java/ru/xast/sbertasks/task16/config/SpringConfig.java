@@ -15,7 +15,7 @@ public class SpringConfig {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setUrl("jdbc:postgresql://localhost:5432/CacheSb");
         dataSource.setUsername("postgres");
-        dataSource.setPassword(".");
+        dataSource.setPassword("HASROV98N");
         return dataSource;
     }
 

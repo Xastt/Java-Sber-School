@@ -8,9 +8,9 @@ public class Ingredient {
 
     private String recip_id;
     private String name;
-    private String quantity;
+    private Integer quantity;
 
-    public Ingredient(String recip_id, String name, String quantity) {
+    public Ingredient(String recip_id, String name, Integer quantity) {
         this.recip_id = recip_id;
         this.name = name;
         this.quantity = quantity;
