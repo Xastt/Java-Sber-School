@@ -18,7 +18,6 @@ public class IngredientDAO {
     @Autowired
     public IngredientDAO(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
-        //createTableIngredientsIfNotExists();
     }
 
     public void createTableIngredientsIfNotExists() {
@@ -32,19 +31,8 @@ public class IngredientDAO {
         jdbcTemplate.update(sql, ingredient.getRecip_id(), ingredient.getName(), ingredient.getQuantity());
     }
 
-    public Ingredient readIngredients(String id) {
-        String sql = "SELECT * FROM Ingredients WHERE recip_id = ?";
-        return jdbcTemplate.query(sql, new Object[]{id}, new BeanPropertyRowMapper<Ingredient>(Ingredient.class))
-                .stream().findAny().orElse(null);
-    }
-
-    public List<Ingredient> getInredientsById(String id) {
-        String sql = "SELECT * FROM Ingredients WHERE recip_id = ?";
-        return jdbcTemplate.query(sql, new Object[]{id}, new BeanPropertyRowMapper<>(Ingredient.class));
-    }
-
     public void deleteInredient(String id){
         String sql = "DELETE FROM Ingredients WHERE recip_id = ?";
         jdbcTemplate.update(sql, id);
     }
-    }
+}

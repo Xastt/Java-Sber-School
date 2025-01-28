@@ -18,7 +18,6 @@ public class RecipeDAO {
     @Autowired
     public RecipeDAO(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
-        //createTableRecipesIfNotExists();
     }
 
     public void createTableRecipesIfNotExists() {
