@@ -8,8 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new 16th task">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task16/RunApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task16/RunApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task16/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task16/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/RunApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/dao/IngredientDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/dao/RecipeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/models/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/models/Recipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/repository/IngredientsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/repository/RecipeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/services/IngredientsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/services/RecipeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +30,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -58,6 +68,7 @@
     "Application.ThreadsTest.executor": "Run",
     "Application.UrlContentReader.executor": "Run",
     "Application.WeatherApp.executor": "Run",
+    "Application.ru.xast.sbertasks.task17.RunApp.executor": "Run",
     "Application.ru.xast.sbertasks.task3.SecondTask.Main.executor": "Run",
     "Application.ru.xast.sbertasks.task4.FirstTask.Main.executor": "Run",
     "Application.ru.xast.sbertasks.task7.Main.executor": "Run",
@@ -88,7 +99,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProj/LibraryApp",
+    "last_opened_file_path": "D:/JavaProj/HibernateApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,6 +113,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProj\SBER-SCHOOL\JavaSberSchool\src\main\java\ru\xast\sbertasks\task17" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -123,7 +137,7 @@
       <recent name="ru.xast.sbertasks.task15" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RunApp">
+  <component name="RunManager" selected="Application.ru.xast.sbertasks.task17.RunApp">
     <configuration name="CalculatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task14.CalculatorTest" />
       <module name="JavaSberSchool" />
@@ -176,12 +190,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task11.ThreadsTest" />
+    <configuration name="ru.xast.sbertasks.task17.RunApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task17.RunApp" />
       <module name="JavaSberSchool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task11.*" />
+          <option name="PATTERN" value="ru.xast.sbertasks.task17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ru.xast.sbertasks.task17.RunApp" />
         <item itemvalue="Application.RunApp" />
         <item itemvalue="Application.RunApplication" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.CalculatorTest" />
-        <item itemvalue="Application.ThreadsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -282,15 +296,8 @@
       <workItem from="1737654659440" duration="3301000" />
       <workItem from="1737731848544" duration="5741000" />
       <workItem from="1737780825639" duration="2091000" />
-      <workItem from="1738055768289" duration="3809000" />
-    </task>
-    <task id="LOCAL-00007" summary="New Task">
-      <option name="closed" value="true" />
-      <created>1732457359262</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1732457359262</updated>
+      <workItem from="1738055768289" duration="4469000" />
+      <workItem from="1738313616212" duration="5978000" />
     </task>
     <task id="LOCAL-00008" summary="New Task">
       <option name="closed" value="true" />
@@ -676,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738061107643</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Add new 16th task">
+      <option name="closed" value="true" />
+      <created>1738061170060</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1738061170060</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
