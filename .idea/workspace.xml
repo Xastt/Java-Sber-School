@@ -7,19 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new 16th task">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/RunApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/dao/IngredientDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/dao/RecipeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/models/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/models/Recipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/repository/IngredientsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/repository/RecipeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/services/IngredientsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/services/RecipeService.java" afterDir="false" />
+    <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new 17th task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/repository/RecipeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/repository/RecipeRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,68 +41,68 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ArrayWithWords.executor": "Run",
-    "Application.CalculatorTest.executor": "Run",
-    "Application.CheckConstants.executor": "Run",
-    "Application.FactorialCalculator.executor": "Run",
-    "Application.GetAllGetters.executor": "Run",
-    "Application.GetAllMethods.executor": "Debug",
-    "Application.LinkedVsArray.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MainPhone.executor": "Run",
-    "Application.RunApp.executor": "Run",
-    "Application.RunApplication.executor": "Run",
-    "Application.TerminalConsoleApp.executor": "Run",
-    "Application.TerminalImpl.executor": "Run",
-    "Application.ThreadsTest.executor": "Run",
-    "Application.UrlContentReader.executor": "Run",
-    "Application.WeatherApp.executor": "Run",
-    "Application.ru.xast.sbertasks.task17.RunApp.executor": "Run",
-    "Application.ru.xast.sbertasks.task3.SecondTask.Main.executor": "Run",
-    "Application.ru.xast.sbertasks.task4.FirstTask.Main.executor": "Run",
-    "Application.ru.xast.sbertasks.task7.Main.executor": "Run",
-    "Application.ru.xast.sbertasks.task7.org.example.Main.executor": "Run",
-    "Application.ru.xast.sbertasks.task9.Main.executor": "Run",
-    "JUnit.ArrayIteratorTest.testArrayIterator.executor": "Run",
-    "JUnit.CalculatorImplTest.executor": "Run",
-    "JUnit.CollectionUtilsTest.executor": "Run",
-    "JUnit.CountMapImplTest.executor": "Run",
-    "JUnit.DigitNumOutputTest.startThreadWorking.executor": "Run",
-    "JUnit.EncryptedClassloaderTest.findClass.executor": "Run",
-    "JUnit.FactorialCalculatorTest.executor": "Run",
-    "JUnit.FactorialCalculatorTest.testReadAndCalculate.executor": "Run",
-    "JUnit.MainTest.executor": "Run",
-    "JUnit.ParentChildTest.executor": "Run",
-    "JUnit.ParentChildTest.testChildConstructorWithParams.executor": "Run",
-    "JUnit.ParentChildTest.testChildConstructorWithoutParams.executor": "Run",
-    "JUnit.ParentTest.TestDefConstructor.executor": "Run",
-    "JUnit.ParentTest.executor": "Run",
-    "JUnit.PhoneNumberTest.executor": "Run",
-    "JUnit.PhoneNumberTest.testGetExistingSurname.executor": "Run",
-    "JUnit.StreamsTest.testAllOperations.executor": "Run",
-    "JUnit.StreamsTest.testAllOperationsWithPerson.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProj/HibernateApp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ArrayWithWords.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CheckConstants.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FactorialCalculator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GetAllGetters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GetAllMethods.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LinkedVsArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainPhone.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RunApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RunApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TerminalConsoleApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TerminalImpl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadsTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UrlContentReader.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WeatherApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task17.RunApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task3.SecondTask.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task4.FirstTask.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task7.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task7.org.example.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.xast.sbertasks.task9.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayIteratorTest.testArrayIterator.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CollectionUtilsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CountMapImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DigitNumOutputTest.startThreadWorking.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EncryptedClassloaderTest.findClass.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FactorialCalculatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FactorialCalculatorTest.testReadAndCalculate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParentChildTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParentChildTest.testChildConstructorWithParams.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParentChildTest.testChildConstructorWithoutParams.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParentTest.TestDefConstructor.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PhoneNumberTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PhoneNumberTest.testGetExistingSurname.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StreamsTest.testAllOperations.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StreamsTest.testAllOperationsWithPerson.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaProj/HibernateApp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaProj\SBER-SCHOOL\JavaSberSchool\src\main\java\ru\xast\sbertasks\task17" />
@@ -298,14 +289,7 @@
       <workItem from="1737780825639" duration="2091000" />
       <workItem from="1738055768289" duration="4469000" />
       <workItem from="1738313616212" duration="5978000" />
-    </task>
-    <task id="LOCAL-00008" summary="New Task">
-      <option name="closed" value="true" />
-      <created>1732468246488</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1732468246488</updated>
+      <workItem from="1738393951719" duration="718000" />
     </task>
     <task id="LOCAL-00009" summary="Start doing first task">
       <option name="closed" value="true" />
@@ -691,7 +675,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738061170060</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Add new 17th task">
+      <option name="closed" value="true" />
+      <created>1738394170592</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1738394170592</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -709,7 +701,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Edit" />
     <MESSAGE value="Add documentation add answers" />
     <MESSAGE value="New 5 task" />
     <MESSAGE value="Add documentation" />
@@ -734,6 +725,7 @@
     <MESSAGE value="Add new 14th task" />
     <MESSAGE value="Add new 15th task" />
     <MESSAGE value="Add new 16th task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new 16th task" />
+    <MESSAGE value="Add new 17th task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new 17th task" />
   </component>
 </project>
