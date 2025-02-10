@@ -55,6 +55,9 @@ public class FixedThreadPool implements ThreadPool {
      */
     public void shutdown() {
         isShutdown = true;
+        for (WorkerThread worker : workers) {
+            worker.interrupt();
+        }
     }
 
     /**

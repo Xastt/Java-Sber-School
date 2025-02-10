@@ -85,6 +85,4 @@ public class ThreadsTest {
         System.out.println("AnotherScalableThreadPool has been shut down immediately.");
         System.out.println("Remaining tasks: " + remainingTasks.size());
     }
-
-
 }

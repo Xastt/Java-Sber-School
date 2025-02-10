@@ -9,7 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1b7c7161-c732-421d-97ee-a51f09e7079f" name="Changes" comment="Add new 17th task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task17/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/FixedThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/xast/sbertasks/task11/FixedThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task11/ThreadsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/xast/sbertasks/task11/ThreadsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JavaProj/HibernateApp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaProj/SBER-SCHOOL/JavaSberSchool&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -127,20 +128,7 @@
       <recent name="ru.xast.sbertasks.task15" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ru.xast.sbertasks.task17.RunApp">
-    <configuration name="CalculatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task14.CalculatorTest" />
-      <module name="JavaSberSchool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.xast.sbertasks.task14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ThreadsTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task15.Main" />
       <module name="JavaSberSchool" />
@@ -180,6 +168,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThreadsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task11.ThreadsTest" />
+      <module name="JavaSberSchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.xast.sbertasks.task11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ru.xast.sbertasks.task17.RunApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.xast.sbertasks.task17.RunApp" />
       <module name="JavaSberSchool" />
@@ -195,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadsTest" />
         <item itemvalue="Application.ru.xast.sbertasks.task17.RunApp" />
         <item itemvalue="Application.RunApp" />
         <item itemvalue="Application.RunApplication" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -288,15 +289,10 @@
       <workItem from="1737780825639" duration="2091000" />
       <workItem from="1738055768289" duration="4469000" />
       <workItem from="1738313616212" duration="5978000" />
-      <workItem from="1738393951719" duration="2176000" />
-    </task>
-    <task id="LOCAL-00010" summary="Added TerminalRun, doesn't work correctly">
-      <option name="closed" value="true" />
-      <created>1732634768415</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1732634768415</updated>
+      <workItem from="1738393951719" duration="2323000" />
+      <workItem from="1738399662354" duration="319000" />
+      <workItem from="1739026269704" duration="1288000" />
+      <workItem from="1739207264192" duration="387000" />
     </task>
     <task id="LOCAL-00011" summary="Added completed second task">
       <option name="closed" value="true" />
@@ -682,7 +678,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738395633467</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Add new 17th task">
+      <option name="closed" value="true" />
+      <created>1738396189644</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1738396189644</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
