@@ -43,6 +43,9 @@ public class FixedThreadPool implements ThreadPool {
         if (isShutdown) {
             throw new IllegalStateException("ThreadPool is shutdown");
         }
+        if(runnable == null) {
+            throw new NullPointerException("Runnable is null(");
+        }
         try{
             queue.put(runnable);
         }catch(InterruptedException e){

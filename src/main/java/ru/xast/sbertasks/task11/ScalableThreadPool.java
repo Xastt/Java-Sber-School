@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * class which realize scalable thread pool
@@ -15,7 +16,7 @@ public class ScalableThreadPool implements ThreadPool {
     private final int maxPoolSize;
     private final BlockingQueue<Runnable> workQueue;
     private final WorkerThread[] workerThreads;
-    private int currentPoolSize;
+    private AtomicInteger currentPoolSize;
     private volatile boolean isShutdown = false;
 
     public ScalableThreadPool(int minPoolSize, int maxPoolSize) {
@@ -23,7 +24,7 @@ public class ScalableThreadPool implements ThreadPool {
         this.maxPoolSize = maxPoolSize;
         this.workQueue = new ArrayBlockingQueue<>(100);
         this.workerThreads = new WorkerThread[maxPoolSize];
-        this.currentPoolSize = minPoolSize;
+        this.currentPoolSize = new AtomicInteger(minPoolSize);
 
         for (int i = 0; i < minPoolSize; i++) {
             workerThreads[i] = new WorkerThread(workQueue, this);
@@ -48,8 +49,11 @@ public class ScalableThreadPool implements ThreadPool {
         if (isShutdown) {
             throw new IllegalStateException("ThreadPool is shutdown");
         }
+        if (runnable == null) {
+            throw new NullPointerException("Runnable task is null");
+        }
         workQueue.offer(runnable);
-        if (workQueue.size() > currentPoolSize && currentPoolSize < maxPoolSize) {
+        if (workQueue.size() > currentPoolSize.get() && currentPoolSize.get() < maxPoolSize) {
             addWorker();
         }
     }
@@ -58,11 +62,11 @@ public class ScalableThreadPool implements ThreadPool {
      * increase amount of active threads if it's possible
      */
     private void addWorker(){
-        if (currentPoolSize < maxPoolSize) {
+        if (currentPoolSize.get() < maxPoolSize) {
             WorkerThread worker = new WorkerThread(workQueue, this);
             worker.start();
-            workerThreads[currentPoolSize] = worker;
-            currentPoolSize++;
+            workerThreads[currentPoolSize.get()] = worker;
+            currentPoolSize.incrementAndGet();
         }
     }
 
@@ -118,9 +122,12 @@ public class ScalableThreadPool implements ThreadPool {
                     Thread.currentThread().interrupt();
                     return;
                 }
-                if(threadPool.isShutdown){
-                    return;
+                if(threadPool.isShutdown && workQueue.isEmpty()){
+                    break;
                 }
+//                if(threadPool.isShutdown){
+//                    return;
+//                }
             }
         }
     }
@@ -128,9 +135,9 @@ public class ScalableThreadPool implements ThreadPool {
     /**
      * decrease amount of threads if it's possible
      */
-    public synchronized void reduceWorkerIfNecessary() {
-        if (currentPoolSize > minPoolSize && workQueue.isEmpty()) {
-            currentPoolSize--;
+    private synchronized void reduceWorkerIfNecessary() {
+        if (currentPoolSize.get() > minPoolSize && workQueue.isEmpty()) {
+            currentPoolSize.decrementAndGet();
         }
     }
 }

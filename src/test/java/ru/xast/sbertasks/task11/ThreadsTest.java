@@ -81,8 +81,8 @@ public class ThreadsTest {
         }
 
         // Now we will shut it down immediately
-        List<Runnable> remainingTasks = anotherScalableThreadPool.shutdownNow();
-        System.out.println("AnotherScalableThreadPool has been shut down immediately.");
-        System.out.println("Remaining tasks: " + remainingTasks.size());
+//        List<Runnable> remainingTasks = anotherScalableThreadPool.shutdownNow();
+//        System.out.println("AnotherScalableThreadPool has been shut down immediately.");
+//        System.out.println("Remaining tasks: " + remainingTasks.size());
     }
 }
